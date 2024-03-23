@@ -1,0 +1,18 @@
+.nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 2rem;
+    }
+}

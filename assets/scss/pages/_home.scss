@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.main {
+    // display: grid;
+    // grid-template-columns: 3fr 1fr;
+    // gap: v.$separacionHorizontal;
+    @include m.grid( ( 3fr 1fr ), v.$separacionHorizontal);
+    // align-items: center;
+
+    &__imagen {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__contenido {
+        margin-top: v.$separacion;
+    }
+}

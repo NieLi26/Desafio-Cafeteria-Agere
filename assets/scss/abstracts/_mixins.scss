@@ -1,0 +1,37 @@
+@use "variables" as v;
+
+/** Media Queries **/
+@mixin telefono {
+    @media (min-width: v.$telefono) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+  
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin transition($properties) {
+    transition-property: $properties;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    // transition: $properties .3s ease-in-out;
+}
+
+@mixin separacion {
+    padding: v.$separacion 0;
+}
+
+@mixin grid( $columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: $columnas;
+}

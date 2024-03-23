@@ -1,0 +1,82 @@
+@use "../abstracts/variables" as v;
+
+.contacto {
+    // height: 30rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 40%;
+
+    &__boxes {
+        padding: 2rem;
+        margin: 0 auto;
+        width: 40%;
+        background-color: v.$white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        h2  {
+            font-size: 4rem;
+        }
+    }
+
+    &__imagen {
+        position: absolute;
+
+
+        &--mapa {
+            width: 30%;
+            left: 27%;
+            bottom: -140%;
+        }
+        &--cafe {
+            z-index: 1;
+            right: 27%;
+            img {
+                height: 15rem;
+                width: 10rem;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.caja {
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    
+    &--roja {
+        height: 15rem;
+        width: 15rem;
+        background-color: v.$flame;
+        z-index: 1;
+        left: 50%;
+        bottom: 20%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            color: v.$white;
+            font-size: 6rem;
+        }
+    }
+    &--amarilla {
+        height: 15rem;
+        width: 15rem;
+        background-color: v.$buff;
+        left: 53%;
+        bottom: 0;
+    }
+    &--celeste {
+        height: 20rem;
+        width: 50%;
+        background-color: v.$blueDeFrance;
+        left: 10%;
+    }
+}
