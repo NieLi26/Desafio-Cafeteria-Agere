@@ -451,14 +451,21 @@ p {
 
 .contacto {
   position: absolute;
-  right: 0;
-  left: 0;
-  top: 40%;
+  top: 55.5%;
+  height: 20%;
+  left: 28%;
+  width: 50%;
 }
 .contacto__boxes {
-  padding: 2rem;
-  margin: 0 auto;
-  width: 40%;
+  position: absolute;
+  left: 50%;
+  margin-left: -22.5rem;
+  top: 50%;
+  margin-top: -7.5rem;
+  z-index: 2;
+  padding: 2rem 5rem;
+  width: 45rem;
+  height: 15rem;
   background-color: #FFF;
   text-align: center;
   display: flex;
@@ -468,18 +475,20 @@ p {
 }
 .contacto__boxes h2 {
   font-size: 4rem;
+  margin: 0;
 }
 .contacto__imagen {
   position: absolute;
 }
 .contacto__imagen--mapa {
-  width: 30%;
-  left: 27%;
-  bottom: -140%;
+  width: 40rem;
+  left: 24%;
+  top: 100%;
 }
 .contacto__imagen--cafe {
   z-index: 1;
-  right: 27%;
+  left: 70%;
+  top: 89%;
 }
 .contacto__imagen--cafe img {
   height: 15rem;
@@ -488,17 +497,15 @@ p {
 }
 
 .caja {
-  margin: 0 auto;
   position: absolute;
-  right: 0;
 }
 .caja--roja {
   height: 15rem;
   width: 15rem;
   background-color: #E4572E;
   z-index: 1;
-  left: 50%;
-  bottom: 20%;
+  left: 71%;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -511,14 +518,18 @@ p {
   height: 15rem;
   width: 15rem;
   background-color: #F1DD7B;
-  left: 53%;
-  bottom: 0;
+  left: 73.5%;
+  top: 50%;
+  margin-top: -7.5rem;
+  z-index: 1;
 }
 .caja--celeste {
   height: 20rem;
-  width: 50%;
+  width: 60rem;
   background-color: #3C91E6;
-  left: 10%;
+  top: 88%;
+  left: 50%;
+  margin-left: -22.5rem;
 }
 
 .footer {
@@ -529,6 +540,8 @@ p {
   width: 23%;
 }
 .footer__imagen {
+  overflow: hidden;
+  height: 25rem;
   width: 35%;
   float: right;
 }

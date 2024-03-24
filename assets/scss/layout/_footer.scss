@@ -10,6 +10,8 @@
     }
 
     &__imagen {
+        overflow: hidden;
+        height: 25rem;
         width: 35%;
         float: right;
         img {
