@@ -5,15 +5,17 @@
     @include m.clearFloat;
 
     &__imagen {
-        width: 70%;
+        width: 80%;
         img {
-            width: 93%;
+            width: 100%;
+            height: 60rem;
             object-fit: cover;
         }
     }
 
     &__contenido {
-        width: 30%;
+        width: 20%;
+        text-align: center;
         float: right;
         margin-top: v.$separacion;
     }
