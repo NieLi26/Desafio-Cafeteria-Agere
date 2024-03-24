@@ -2,20 +2,19 @@
 @use "../abstracts/mixins" as m;
 
 .main {
-    // display: grid;
-    // grid-template-columns: 3fr 1fr;
-    // gap: v.$separacionHorizontal;
-    @include m.grid( ( 3fr 1fr ), v.$separacionHorizontal);
-    // align-items: center;
+    @include m.clearFloat;
 
     &__imagen {
+        width: 70%;
         img {
-            width: 100%;
+            width: 93%;
             object-fit: cover;
         }
     }
 
     &__contenido {
+        width: 30%;
+        float: right;
         margin-top: v.$separacion;
     }
 }

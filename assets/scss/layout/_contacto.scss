@@ -1,11 +1,11 @@
 @use "../abstracts/variables" as v;
 
 .contacto {
-    // height: 30rem;
     position: absolute;
     right: 0;
     left: 0;
     top: 40%;
+
 
     &__boxes {
         padding: 2rem;

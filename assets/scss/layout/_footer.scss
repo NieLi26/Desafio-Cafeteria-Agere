@@ -3,23 +3,14 @@
 
 .footer {
     position: relative;
-    margin-top: v.$separacion;
-    // @include m.separacion;
-
-    // @include m.grid( ( 3fr 1fr ), 0);
-
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
 
     &__contenido {
-        p {
-            max-width: 25%;
-        }
+        padding-top: v.$separacion;
+        width: 23%;
     }
 
     &__imagen {
-        width: 30%;
+        width: 35%;
         float: right;
         img {
             object-fit: cover;

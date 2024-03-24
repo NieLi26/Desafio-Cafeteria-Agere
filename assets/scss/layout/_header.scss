@@ -3,11 +3,10 @@
 
 .header {
     @include m.separacion;
-    display: flex;
-    align-items: center;
-    gap: v.$separacionHorizontal;
+    @include m.clearFloat;
 
     &__logo {
+        width: 10%;
         width: 3rem;
     }
 }
