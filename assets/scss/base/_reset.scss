@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as v;
+@use "typography" as t;
 
 html {
     box-sizing: border-box;
@@ -10,7 +11,7 @@ html {
     box-sizing: inherit;
 }
 body {
-    font-family: v.$fuentePrincipal;
+    font-family: t.$fuentePrincipal;
     font-size: 1.6rem;
 }
 a {
@@ -42,7 +43,7 @@ h3 {
     font-size: 2rem;
 }
 p {
-    font-family: v.$fuenteSecundaria;
+    font-family: t.$fuenteSecundaria;
     margin-top: 0;
 }
 .contenedor {
